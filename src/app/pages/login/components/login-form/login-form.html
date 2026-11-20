@@ -1,0 +1,25 @@
+<form [formGroup]="form" (ngSubmit)="signIn()" class="flex flex-col gap-6 text-xs">
+  <input
+    class="bg-surface-muted placeholder:text-text-muted-light text-text-main p-4 h-10 rounded-[5px] pl-[46px] border-2 border-surface-muted briefcase-icon"
+    type="text"
+    placeholder="Company ID (emilys)"
+    formControlName="inputCompanyID"
+    appInvalidFormField
+  />
+  <input
+    class="bg-surface-muted placeholder:text-text-muted-light text-text-main p-4 h-10 rounded-[5px] pl-[46px] border-2 border-surface-muted lock-icon"
+    type="password"
+    placeholder="Password (emilyspass)"
+    formControlName="inputPassword"
+    appInvalidFormField
+  />
+  <label class="h-[18px] flex gap-2.5 items-center text-text-muted-dark"
+    ><input type="checkbox" formControlName="rememberMe" class="h-4 w-4"/>Remember Me</label
+  >
+  <button
+    class="text-text-inverse text-xs font-bold bg-accent h-10 w-full rounded-[5px]"
+    type="submit"
+  >
+    Sign in
+  </button>
+</form>

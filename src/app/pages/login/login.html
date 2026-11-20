@@ -1,0 +1,9 @@
+<main class="min-h-screen flex items-center justify-center bg-app-bg">
+  @if (loginVM.loginState.isLoading()) {
+    <div class="loader"></div>
+  } @else if (loginVM.loginState.error(); as error) {
+    <p>{{ error }}</p>
+  } @else {
+    <app-welcome-card (submitted)="loginVM.submit($event)"> </app-welcome-card>
+  }
+</main>
