@@ -2,7 +2,7 @@
   class="w-[350px] h-[350px] p-[30px] rounded-[10px] bg-surface flex flex-col justify-between shadow-custom"
 >
   <div class="h-14 flex flex-col justify-between">
-    <h1 class="text-text-main text-2xl font-bold">Welcome Back</h1>
+    <h1 class="text-text-main text-2xl font-bold">{{'login.title' | translate:({name: "John"})}}</h1>
     <h3 class="text-text-muted-dark text-xs">Login to your account</h3>
   </div>
   <app-login-form (submitted)="submitted.emit($event)"></app-login-form>

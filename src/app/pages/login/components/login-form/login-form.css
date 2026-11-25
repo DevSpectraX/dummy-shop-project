@@ -1,10 +1,10 @@
 .lock-icon {
-  background-image: url('./icon/lock.svg');
+  background-image: url('/assets/icons/lock.svg');
   background-position: 20px 10px;
   background-repeat: no-repeat;
 }
 .briefcase-icon {
-  background-image: url('./icon/briefcase.svg');
+  background-image: url('/assets/icons/briefcase.svg');
   background-position: 20px 10px;
   background-repeat: no-repeat;
 }
